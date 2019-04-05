@@ -2,8 +2,29 @@ header{
     text-align: center;
 }
 
+.calculator{
+    text-align: center;
+    background-color: yellow;
+    margin: 15% auto;
+}
+
+.display-bar{
+    background-color: black;
+}
+
+.text-box{
+    width: 410px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+}
+
+p{
+    color: white;
+}
+
 .all-buttons > div >.btn{
-    display:inline;
+    display: inline;
 }
 
 .all-buttons > div > div > button{

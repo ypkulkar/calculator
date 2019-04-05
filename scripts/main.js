@@ -23,3 +23,28 @@ function operate(a,b,o){
             console.log("There is an error in operate()");
     }
 }
+
+// const tmpButton = document.querySelector("#clear-button");
+// tmpButton.addEventListener("click",function(){
+//     const display = document.querySelector("#display-text");
+    
+// })
+
+let display_text = "" // This is where the equation is going to be stored
+
+const allBtns = document.querySelectorAll(".btn")
+allBtns.forEach(btn => {
+    const text = btn.textContent;
+    btn.addEventListener("click",function(){
+        const display = document.querySelector("#display-text");
+        if(btn.id === "clear-button"){
+            display_text = "";
+            display.textContent= "";
+        }
+        else{
+        display_text += text;
+        display.textContent= display_text;
+        }
+    })
+    
+})
