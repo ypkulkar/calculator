@@ -4,19 +4,14 @@ header{
 
 .calculator{
     text-align: center;
-    background-color: yellow;
     margin: 15% auto;
-}
-
-.display-bar{
-    background-color: black;
 }
 
 .text-box{
     width: 410px;
     height: 100px;
-    background-color: red;
-    display: inline-block;
+    background-color: black;
+    display: inline-block; 
 }
 
 p{

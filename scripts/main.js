@@ -39,7 +39,7 @@ allBtns.forEach(btn => {
         const display = document.querySelector("#display-text");
         if(btn.id === "clear-button"){
             display_text = "";
-            display.textContent= "";
+            display.textContent= "TEXT";
         }
         else{
         display_text += text;
