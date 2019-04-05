@@ -11,7 +11,12 @@ header{
     width: 410px;
     height: 100px;
     background-color: black;
-    display: inline-block; 
+    display: inline-block;
+    text-align: right;
+}
+
+.text-box > p{
+    padding: 20px;
 }
 
 p{
