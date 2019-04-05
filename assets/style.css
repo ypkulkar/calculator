@@ -1,0 +1,17 @@
+header{
+    text-align: center;
+}
+
+.all-buttons > div >.btn{
+    display:inline;
+}
+
+.all-buttons > div > div > button{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+
+#zero-button{
+    width: 204px;
+}
