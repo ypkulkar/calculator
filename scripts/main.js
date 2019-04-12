@@ -43,6 +43,7 @@ allBtns.forEach(btn => {
             display.textContent= "0";
         }
         else if(btn.classList.contains("num")){
+            display.textContent = display_text;
             display_text += text;
             display.textContent = display_text;
         }
@@ -56,7 +57,7 @@ allBtns.forEach(btn => {
             operand2 = display_text;
             result = operate(+operand1,+operand2,String(opChosen));
             display.textContent = result;
-            display_text = "0";
+            display_text = "";
             operand1 = "";
             operand2 = "";
 
