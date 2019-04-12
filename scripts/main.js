@@ -36,31 +36,29 @@ allBtns.forEach(btn => {
     
     btn.addEventListener("click",function(){
         const display = document.querySelector("#display-text");
-        const text = btn.textContent;
+        const text = btn.textContent.trim();
         
         if(btn.id === "clear-button"){
             display_text = "";
             display.textContent= "0";
         }
         else if(btn.classList.contains("num")){
-            display_text += String(text);
-            console.log(typeof(display_text));
+            display_text += text;
             display.textContent = display_text;
         }
         else if(btn.classList.contains("op")){
             operand1 = display_text;
             display_text = "";
             display.textContent = "0";
-            opChosen = btn.textContent;
+            opChosen = btn.textContent.trim();
         }
         else if(btn.classList.contains("eq")){
             operand2 = display_text;
-            //console.log(`op = ${opChosen}`);
-            //console.log(`operand1 = ${operand1}`)
-            
-            //result = operate(+operand1,+operand2,String(opChosen));
-            result = +operand1 + (+operand2);
-            //console.log(result);
+            result = operate(+operand1,+operand2,String(opChosen));
+            display.textContent = result;
+            display_text = "0";
+            operand1 = "";
+            operand2 = "";
 
         }
         else{
