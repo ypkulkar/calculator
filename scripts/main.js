@@ -56,8 +56,8 @@ allBtns.forEach(btn => {
         else if(btn.classList.contains("eq")){
             operand2 = display_text;
             result = operate(+operand1,+operand2,String(opChosen));
-            display.textContent = result;
-            display_text = "";
+            display.textContent = "= " + result;
+            display_text = result;
             operand1 = "";
             operand2 = "";
 
